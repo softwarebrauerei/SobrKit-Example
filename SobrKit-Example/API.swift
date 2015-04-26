@@ -24,5 +24,7 @@ class API {
                       .responseObject { (_, _, envelope: Envelope?, error) -> Void in
                             error == nil ? success(jokes: envelope!.jokes) : failure(error: error!)
                         }
+        
+        debugPrintln(request)
     }
 }
