@@ -4,8 +4,3 @@ use_frameworks!
 target 'SobrKit-Example' do
 	pod 'SobrKit'
 end
-
-target 'SobrKit-ExampleTests' do
-
-end
-
