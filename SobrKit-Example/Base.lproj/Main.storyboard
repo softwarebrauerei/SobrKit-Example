@@ -30,7 +30,6 @@
                                 <color key="backgroundColor" red="0.19376453757286072" green="0.50850099325180054" blue="0.85232251882553101" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="centerY" secondItem="dSF-Z3-whj" secondAttribute="centerY" constant="0.5" id="18d-BE-XDn"/>
-                                    <constraint firstAttribute="centerX" secondItem="dSF-Z3-whj" secondAttribute="centerX" id="7LA-LO-ml2"/>
                                     <constraint firstAttribute="height" constant="200" id="B1V-2r-jg8"/>
                                     <constraint firstItem="dSF-Z3-whj" firstAttribute="leading" secondItem="IqL-rr-u9u" secondAttribute="leading" constant="61" id="h1b-b9-G6m"/>
                                     <constraint firstAttribute="trailing" secondItem="dSF-Z3-whj" secondAttribute="trailing" constant="60" id="mA6-Ph-1hg"/>
@@ -55,7 +54,6 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="4Mt-t8-uCK"/>
                                     <constraint firstAttribute="centerY" secondItem="68x-0D-ERz" secondAttribute="centerY" id="6I0-dE-YK6"/>
-                                    <constraint firstAttribute="centerX" secondItem="68x-0D-ERz" secondAttribute="centerX" id="GJC-6c-EK9"/>
                                     <constraint firstAttribute="trailing" secondItem="68x-0D-ERz" secondAttribute="trailing" constant="60" id="Sj0-MW-wif"/>
                                     <constraint firstItem="68x-0D-ERz" firstAttribute="leading" secondItem="2i1-ha-5IK" secondAttribute="leading" constant="61" id="niv-Sl-iGx"/>
                                 </constraints>
@@ -79,14 +77,8 @@
                             <constraint firstItem="2i1-ha-5IK" firstAttribute="trailing" secondItem="PtV-bq-Zok" secondAttribute="trailingMargin" id="STC-vb-ODj"/>
                             <constraint firstAttribute="trailingMargin" secondItem="IqL-rr-u9u" secondAttribute="trailing" id="TK1-x1-r3J"/>
                             <constraint firstItem="IqL-rr-u9u" firstAttribute="leading" secondItem="PtV-bq-Zok" secondAttribute="leadingMargin" id="ZzI-eG-aeJ"/>
-                            <constraint firstItem="ZDA-HN-4ar" firstAttribute="top" secondItem="IqL-rr-u9u" secondAttribute="bottom" id="mTk-mp-fBf"/>
                             <constraint firstItem="IqL-rr-u9u" firstAttribute="top" secondItem="V22-5Z-bWt" secondAttribute="bottom" constant="20" id="p2d-Dc-Hev"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="mTk-mp-fBf"/>
-                            </mask>
-                        </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="6Ks-IJ-A2C"/>
                 </viewController>
