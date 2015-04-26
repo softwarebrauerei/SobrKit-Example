@@ -2,7 +2,7 @@ SobrKit-Example
 ===============
 
 ##Install & Run
-1. Clone this repo `git clone git@github.com/softwarebrauerei/SobrKit-Example.git`
+1. Clone this repo `git clone git@github.com:softwarebrauerei/SobrKit-Example.git`
 2. Run `pod install`
 3. Open `SobrKit-Example.xcworkspace` and press `cmd+R`
 
