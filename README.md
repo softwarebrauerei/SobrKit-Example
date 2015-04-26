@@ -50,6 +50,40 @@ Have a look at `API.swift` to see how the request is called.
 In the `AlamofireViewController.swift` we use the API class function `fetchJokes(...` to fetch 15 jokes from the service. One of these jokes will be displayed in the view.
 
 ### Model Aware Controls
+TL;DR Databinding for UIControls!
+
+With Model Aware Controls you are able to bind ui elements directly to your model objects. Without a line of code. Just define the `Model Key Path` in the Interface Builder and enjoy!
+![Databinding](https://raw.githubusercontent.com/softwarebrauerei/SobrKit-Example/develop/assets/databinding-screenshot.jpg)
+
+**Databinding is available for these contorls**
+* UILabel
+* UITextView
+* UITextField
+* UISwitch
+* UISegmentedControl
+
+#### Other properties on Model Aware Controls
+![Model Aware Options](https://raw.githubusercontent.com/softwarebrauerei/SobrKit-Example/develop/assets/model-aware-options-screenshot.jpg)
+* `Realtime`
+
+ Observes the model key path and updates the control when the model is updated.
+
+* `Required`
+
+	Boolean if the value can be empty. 
+
+* `Error Background Color` or `Error Tint Color`
+
+	The background color of the control will be set to this color if there is a validation error.
+
+* `Valid Background Color` or `Valid Tint Color`
+
+	The background color of the control will be set to this color if the validation is passed. 
+
+* `Validation Pattern`
+
+	Set a regex via this property and it will be validated with this regex. For convenience you can type `email` to validate an email addresses.
+
 
 ## Authors
 
