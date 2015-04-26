@@ -80,7 +80,7 @@
                             <constraint firstItem="IqL-rr-u9u" firstAttribute="top" secondItem="V22-5Z-bWt" secondAttribute="bottom" constant="20" id="p2d-Dc-Hev"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="UIKit" id="6Ks-IJ-A2C"/>
+                    <tabBarItem key="tabBarItem" title="UIKit" image="star" id="6Ks-IJ-A2C"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="09u-7w-LLi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -125,7 +125,7 @@
                             <constraint firstAttribute="centerX" secondItem="VgN-Rr-faL" secondAttribute="centerX" id="mnl-fA-nL6"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Alamofire" id="M2U-v7-i5A"/>
+                    <tabBarItem key="tabBarItem" title="Alamofire" image="star" id="M2U-v7-i5A"/>
                     <connections>
                         <outlet property="jokeTextView" destination="WyC-nW-csh" id="hXR-cP-xHT"/>
                     </connections>
@@ -175,7 +175,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="Dgm-wp-Mue" secondAttribute="trailing" id="sZV-oI-ipS"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Model Aware Controls" id="FcL-kb-T4o"/>
+                    <tabBarItem key="tabBarItem" title="Model Aware Controls" image="star" id="FcL-kb-T4o"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QD6-EB-1t4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -251,7 +251,7 @@
                             <constraint firstItem="MMH-B1-Osz" firstAttribute="leading" secondItem="HIc-Co-TTZ" secondAttribute="leadingMargin" id="z6W-Cq-cZN"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Foundation" id="h2G-ue-S1k"/>
+                    <tabBarItem key="tabBarItem" title="Foundation" image="star" id="h2G-ue-S1k"/>
                     <connections>
                         <outlet property="condensedLabel" destination="op7-1M-feo" id="Jhp-KG-cNK"/>
                         <outlet property="localizedFormatLabel" destination="TUO-aH-GhU" id="kB3-di-fYq"/>
@@ -285,4 +285,7 @@
             <point key="canvasLocation" x="668" y="765"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="star" width="64" height="64"/>
+    </resources>
 </document>
