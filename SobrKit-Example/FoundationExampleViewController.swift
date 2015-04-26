@@ -17,6 +17,8 @@ class FoundationExampleViewController: UIViewController {
     @IBOutlet weak var condensedLabel: UILabel!
     @IBOutlet weak var outputTextView: UITextView!
 
+    
+    //MARK: Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         

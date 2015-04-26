@@ -16,7 +16,77 @@
                     <view key="view" contentMode="scaleToFill" id="PtV-bq-Zok">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IqL-rr-u9u">
+                                <rect key="frame" x="16" y="40" width="568" height="200"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My superview has rounded corners set in Interface Builder." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dSF-Z3-whj">
+                                        <rect key="frame" x="61" y="79" width="447" height="41"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.19376453757286072" green="0.50850099325180054" blue="0.85232251882553101" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="centerY" secondItem="dSF-Z3-whj" secondAttribute="centerY" constant="0.5" id="18d-BE-XDn"/>
+                                    <constraint firstAttribute="centerX" secondItem="dSF-Z3-whj" secondAttribute="centerX" id="7LA-LO-ml2"/>
+                                    <constraint firstAttribute="height" constant="200" id="B1V-2r-jg8"/>
+                                    <constraint firstItem="dSF-Z3-whj" firstAttribute="leading" secondItem="IqL-rr-u9u" secondAttribute="leading" constant="61" id="h1b-b9-G6m"/>
+                                    <constraint firstAttribute="trailing" secondItem="dSF-Z3-whj" secondAttribute="trailing" constant="60" id="mA6-Ph-1hg"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2i1-ha-5IK">
+                                <rect key="frame" x="16" y="248" width="568" height="200"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="And my superview has a border set directly in Interface Builder." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="68x-0D-ERz">
+                                        <rect key="frame" x="61" y="79" width="447" height="41"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.19376453760000001" green="0.50850099329999998" blue="0.85232251879999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="4Mt-t8-uCK"/>
+                                    <constraint firstAttribute="centerY" secondItem="68x-0D-ERz" secondAttribute="centerY" id="6I0-dE-YK6"/>
+                                    <constraint firstAttribute="centerX" secondItem="68x-0D-ERz" secondAttribute="centerX" id="GJC-6c-EK9"/>
+                                    <constraint firstAttribute="trailing" secondItem="68x-0D-ERz" secondAttribute="trailing" constant="60" id="Sj0-MW-wif"/>
+                                    <constraint firstItem="68x-0D-ERz" firstAttribute="leading" secondItem="2i1-ha-5IK" secondAttribute="leading" constant="61" id="niv-Sl-iGx"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.52106726169586182" green="0.24050712585449219" blue="0.68248951435089111" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2i1-ha-5IK" firstAttribute="leading" secondItem="PtV-bq-Zok" secondAttribute="leadingMargin" id="5xc-2q-6Hx"/>
+                            <constraint firstItem="2i1-ha-5IK" firstAttribute="top" secondItem="IqL-rr-u9u" secondAttribute="bottom" constant="8" id="FNL-MG-iLb"/>
+                            <constraint firstItem="2i1-ha-5IK" firstAttribute="trailing" secondItem="PtV-bq-Zok" secondAttribute="trailingMargin" id="STC-vb-ODj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="IqL-rr-u9u" secondAttribute="trailing" id="TK1-x1-r3J"/>
+                            <constraint firstItem="IqL-rr-u9u" firstAttribute="leading" secondItem="PtV-bq-Zok" secondAttribute="leadingMargin" id="ZzI-eG-aeJ"/>
+                            <constraint firstItem="ZDA-HN-4ar" firstAttribute="top" secondItem="IqL-rr-u9u" secondAttribute="bottom" id="mTk-mp-fBf"/>
+                            <constraint firstItem="IqL-rr-u9u" firstAttribute="top" secondItem="V22-5Z-bWt" secondAttribute="bottom" constant="20" id="p2d-Dc-Hev"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="mTk-mp-fBf"/>
+                            </mask>
+                        </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="6Ks-IJ-A2C"/>
                 </viewController>
