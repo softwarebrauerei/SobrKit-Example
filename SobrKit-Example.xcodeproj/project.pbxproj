@@ -17,6 +17,7 @@
 		94A6FD4B1AED89D1004B5B65 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A6FD4A1AED89D1004B5B65 /* Model.swift */; };
 		94A6FD4D1AED8B5F004B5B65 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A6FD4C1AED8B5F004B5B65 /* API.swift */; };
 		94A6FD4F1AED8EFA004B5B65 /* AlamofireViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A6FD4E1AED8EFA004B5B65 /* AlamofireViewController.swift */; };
+		94A6FD511AED955D004B5B65 /* ModelAwareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A6FD501AED955D004B5B65 /* ModelAwareViewController.swift */; };
 		BAC1145B04450F38FEF901AE /* Pods_SobrKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50C06255F0AE2D265CF0EA02 /* Pods_SobrKit_Example.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -37,6 +38,7 @@
 		94A6FD4A1AED89D1004B5B65 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		94A6FD4C1AED8B5F004B5B65 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		94A6FD4E1AED8EFA004B5B65 /* AlamofireViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireViewController.swift; sourceTree = "<group>"; };
+		94A6FD501AED955D004B5B65 /* ModelAwareViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelAwareViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 		94A6FD3B1AED4BD7004B5B65 /* Model Aware Controls */ = {
 			isa = PBXGroup;
 			children = (
+				94A6FD501AED955D004B5B65 /* ModelAwareViewController.swift */,
 			);
 			name = "Model Aware Controls";
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 				94A6FD3F1AED4DAD004B5B65 /* UIKitExampleViewController.swift in Sources */,
 				94A6FD4F1AED8EFA004B5B65 /* AlamofireViewController.swift in Sources */,
 				94A6FD3D1AED4D8F004B5B65 /* FoundationExampleViewController.swift in Sources */,
+				94A6FD511AED955D004B5B65 /* ModelAwareViewController.swift in Sources */,
 				94A6FD1A1AED4918004B5B65 /* AppDelegate.swift in Sources */,
 				94A6FD4B1AED89D1004B5B65 /* Model.swift in Sources */,
 				94A6FD4D1AED8B5F004B5B65 /* API.swift in Sources */,

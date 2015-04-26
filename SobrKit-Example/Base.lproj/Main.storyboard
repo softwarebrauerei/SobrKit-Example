@@ -134,6 +134,53 @@
             </objects>
             <point key="canvasLocation" x="1481" y="1794"/>
         </scene>
+        <!--Model Aware Controls-->
+        <scene sceneID="c8C-2l-icR">
+            <objects>
+                <viewController id="gXY-ML-1eU" customClass="ModelAwareViewController" customModule="SobrKit_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ArR-Q9-MiQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="skV-qq-4oK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8aR-WQ-fGu">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type something here" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m40-gP-yCl">
+                                <rect key="frame" x="16" y="40" width="568" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="modelKeyPath" value="data.text"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="and it will appear here..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dgm-wp-Mue">
+                                <rect key="frame" x="16" y="89" width="568" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="realtime" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="modelKeyPath" value="data.text"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="m40-gP-yCl" secondAttribute="trailing" id="9Jo-VM-Pfq"/>
+                            <constraint firstItem="m40-gP-yCl" firstAttribute="top" secondItem="ArR-Q9-MiQ" secondAttribute="bottom" constant="20" id="MyF-Fx-Dbv"/>
+                            <constraint firstItem="Dgm-wp-Mue" firstAttribute="top" secondItem="m40-gP-yCl" secondAttribute="bottom" constant="19" id="SZ7-AU-daf"/>
+                            <constraint firstItem="Dgm-wp-Mue" firstAttribute="leading" secondItem="8aR-WQ-fGu" secondAttribute="leadingMargin" id="hQD-tl-Myg"/>
+                            <constraint firstItem="m40-gP-yCl" firstAttribute="leading" secondItem="8aR-WQ-fGu" secondAttribute="leadingMargin" id="pBU-Bh-5Jg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Dgm-wp-Mue" secondAttribute="trailing" id="sZV-oI-ipS"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Model Aware Controls" id="FcL-kb-T4o"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QD6-EB-1t4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1471" y="2481"/>
+        </scene>
         <!--Foundation-->
         <scene sceneID="K9f-tN-gr5">
             <objects>
@@ -230,6 +277,7 @@
                         <segue destination="lhe-hO-QJc" kind="relationship" relationship="viewControllers" id="P4L-sC-Cz4"/>
                         <segue destination="vsu-Ej-ZX0" kind="relationship" relationship="viewControllers" id="F7h-aq-hzx"/>
                         <segue destination="NZY-LT-sbH" kind="relationship" relationship="viewControllers" id="a4A-Sb-UaH"/>
+                        <segue destination="gXY-ML-1eU" kind="relationship" relationship="viewControllers" id="2P5-w0-YfW"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RNa-6C-uah" userLabel="First Responder" sceneMemberID="firstResponder"/>
