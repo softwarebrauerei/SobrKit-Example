@@ -10,11 +10,11 @@ SobrKit-Example
 ### Foundation Extension
 See `FoundationExampleViewController.swift`
 
-![Folder Structure Foundation](https://raw.githubusercontent.com/softwarebrauerei/SobrKit-Example/develop/assets/foundation-structure-screenshot.jpg)
+![Folder Structure Foundation](https://raw.githubusercontent.com/softwarebrauerei/SobrKit-Example/master/assets/foundation-structure-screenshot.jpg)
 
 ### UIKit Extension
 See `Main.storyboard`
-![UIKit Extension Screenshot](https://raw.githubusercontent.com/softwarebrauerei/SobrKit-Example/develop/assets/uikit-extension-screenshot.jpg)
+![UIKit Extension Screenshot](https://raw.githubusercontent.com/softwarebrauerei/SobrKit-Example/master/assets/uikit-extension-screenshot.jpg)
 
 ### Alamofire Extension
 As example we've used the api from [The Internet Chuck Norris Database](http://www.icndb.com/api/)
@@ -44,7 +44,7 @@ Have a look at `Model.swift` to see how to implement some model objects for this
 #### The API Controller
 Have a look at `API.swift` to see how the request is called.
 
-![Object Mapping](https://raw.githubusercontent.com/softwarebrauerei/SobrKit-Example/develop/assets/alamofire-object-mapping-screenshot.jpg)
+![Object Mapping](https://raw.githubusercontent.com/softwarebrauerei/SobrKit-Example/master/assets/alamofire-object-mapping-screenshot.jpg)
 
 #### The View Controller
 In the `AlamofireViewController.swift` we use the API class function `fetchJokes(...` to fetch 15 jokes from the service. One of these jokes will be displayed in the view.
@@ -53,7 +53,7 @@ In the `AlamofireViewController.swift` we use the API class function `fetchJokes
 TL;DR Databinding for UIControls!
 
 With Model Aware Controls you are able to bind ui elements directly to your model objects. Without a line of code. Just define the `Model Key Path` in the Interface Builder and enjoy!
-![Databinding](https://raw.githubusercontent.com/softwarebrauerei/SobrKit-Example/develop/assets/databinding-screenshot.jpg)
+![Databinding](https://raw.githubusercontent.com/softwarebrauerei/SobrKit-Example/master/assets/databinding-screenshot.jpg)
 
 **Databinding is available for these contorls**
 * UILabel
@@ -63,7 +63,7 @@ With Model Aware Controls you are able to bind ui elements directly to your mode
 * UISegmentedControl
 
 #### Other properties on Model Aware Controls
-![Model Aware Options](https://raw.githubusercontent.com/softwarebrauerei/SobrKit-Example/develop/assets/model-aware-options-screenshot.jpg)
+![Model Aware Options](https://raw.githubusercontent.com/softwarebrauerei/SobrKit-Example/master/assets/model-aware-options-screenshot.jpg)
 * `Realtime`
 
  Observes the model key path and updates the control when the model is updated.
