@@ -14,6 +14,9 @@
 		94A6FD3D1AED4D8F004B5B65 /* FoundationExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A6FD3C1AED4D8F004B5B65 /* FoundationExampleViewController.swift */; };
 		94A6FD3F1AED4DAD004B5B65 /* UIKitExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A6FD3E1AED4DAD004B5B65 /* UIKitExampleViewController.swift */; };
 		94A6FD431AED4E5A004B5B65 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 94A6FD451AED4E5A004B5B65 /* Localizable.strings */; };
+		94A6FD4B1AED89D1004B5B65 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A6FD4A1AED89D1004B5B65 /* Model.swift */; };
+		94A6FD4D1AED8B5F004B5B65 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A6FD4C1AED8B5F004B5B65 /* API.swift */; };
+		94A6FD4F1AED8EFA004B5B65 /* AlamofireViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A6FD4E1AED8EFA004B5B65 /* AlamofireViewController.swift */; };
 		BAC1145B04450F38FEF901AE /* Pods_SobrKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50C06255F0AE2D265CF0EA02 /* Pods_SobrKit_Example.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -31,6 +34,9 @@
 		94A6FD3E1AED4DAD004B5B65 /* UIKitExampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitExampleViewController.swift; sourceTree = "<group>"; };
 		94A6FD471AED4E6E004B5B65 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		94A6FD481AED4E7C004B5B65 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		94A6FD4A1AED89D1004B5B65 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		94A6FD4C1AED8B5F004B5B65 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		94A6FD4E1AED8EFA004B5B65 /* AlamofireViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +75,7 @@
 				94A6FD191AED4918004B5B65 /* AppDelegate.swift */,
 				94A6FD391AED4BC7004B5B65 /* Foundation Extensions */,
 				94A6FD3A1AED4BCF004B5B65 /* UIKit Extensions */,
+				94A6FD491AED6027004B5B65 /* Alamofire Extension */,
 				94A6FD3B1AED4BD7004B5B65 /* Model Aware Controls */,
 				94A6FD1D1AED4918004B5B65 /* Main.storyboard */,
 				94A6FD201AED4918004B5B65 /* Images.xcassets */,
@@ -116,6 +123,16 @@
 				94A6FD451AED4E5A004B5B65 /* Localizable.strings */,
 			);
 			name = Translations;
+			sourceTree = "<group>";
+		};
+		94A6FD491AED6027004B5B65 /* Alamofire Extension */ = {
+			isa = PBXGroup;
+			children = (
+				94A6FD4A1AED89D1004B5B65 /* Model.swift */,
+				94A6FD4C1AED8B5F004B5B65 /* API.swift */,
+				94A6FD4E1AED8EFA004B5B65 /* AlamofireViewController.swift */,
+			);
+			name = "Alamofire Extension";
 			sourceTree = "<group>";
 		};
 		CF71D3D6A125B2F5F0EE340A /* Pods */ = {
@@ -259,8 +276,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				94A6FD3F1AED4DAD004B5B65 /* UIKitExampleViewController.swift in Sources */,
+				94A6FD4F1AED8EFA004B5B65 /* AlamofireViewController.swift in Sources */,
 				94A6FD3D1AED4D8F004B5B65 /* FoundationExampleViewController.swift in Sources */,
 				94A6FD1A1AED4918004B5B65 /* AppDelegate.swift in Sources */,
+				94A6FD4B1AED89D1004B5B65 /* Model.swift in Sources */,
+				94A6FD4D1AED8B5F004B5B65 /* API.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

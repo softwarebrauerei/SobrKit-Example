@@ -5,7 +5,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Item 2-->
+        <!--UIKit-->
         <scene sceneID="gah-QH-WyN">
             <objects>
                 <viewController id="vsu-Ej-ZX0" customClass="UIKitExampleViewController" customModule="SobrKit_Example" customModuleProvider="target" sceneMemberID="viewController">
@@ -80,13 +80,61 @@
                             <constraint firstItem="IqL-rr-u9u" firstAttribute="top" secondItem="V22-5Z-bWt" secondAttribute="bottom" constant="20" id="p2d-Dc-Hev"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="6Ks-IJ-A2C"/>
+                    <tabBarItem key="tabBarItem" title="UIKit" id="6Ks-IJ-A2C"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="09u-7w-LLi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1488" y="1096"/>
         </scene>
-        <!--Item 1-->
+        <!--Item 3-->
+        <scene sceneID="CSb-Tw-ggQ">
+            <objects>
+                <viewController id="NZY-LT-sbH" userLabel="Item 3" customClass="AlamofireViewController" customModule="SobrKit_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sb4-wP-XX0"/>
+                        <viewControllerLayoutGuide type="bottom" id="JcT-XM-U7b"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="M3v-w4-V9H">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VgN-Rr-faL">
+                                <rect key="frame" x="233" y="28" width="134" height="30"/>
+                                <state key="normal" title="Load Random Joke">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="loadRandomJoke:" destination="NZY-LT-sbH" eventType="touchUpInside" id="zes-is-bqX"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WyC-nW-csh">
+                                <rect key="frame" x="16" y="93" width="568" height="438"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="VgN-Rr-faL" firstAttribute="top" secondItem="sb4-wP-XX0" secondAttribute="bottom" constant="8" id="1V9-ki-QPX"/>
+                            <constraint firstItem="JcT-XM-U7b" firstAttribute="top" secondItem="WyC-nW-csh" secondAttribute="bottom" constant="20" id="8ge-kr-Om0"/>
+                            <constraint firstItem="WyC-nW-csh" firstAttribute="leading" secondItem="M3v-w4-V9H" secondAttribute="leadingMargin" id="N1l-AG-DgG"/>
+                            <constraint firstItem="WyC-nW-csh" firstAttribute="top" secondItem="VgN-Rr-faL" secondAttribute="bottom" constant="35" id="QqH-bk-I2Q"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="WyC-nW-csh" secondAttribute="trailing" id="VaO-1z-Xac"/>
+                            <constraint firstAttribute="centerX" secondItem="VgN-Rr-faL" secondAttribute="centerX" id="mnl-fA-nL6"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Alamofire" id="M2U-v7-i5A"/>
+                    <connections>
+                        <outlet property="jokeTextView" destination="WyC-nW-csh" id="hXR-cP-xHT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Py0-Fc-whK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1481" y="1794"/>
+        </scene>
+        <!--Foundation-->
         <scene sceneID="K9f-tN-gr5">
             <objects>
                 <viewController id="lhe-hO-QJc" customClass="FoundationExampleViewController" customModule="SobrKit_Example" customModuleProvider="target" sceneMemberID="viewController">
@@ -156,7 +204,7 @@
                             <constraint firstItem="MMH-B1-Osz" firstAttribute="leading" secondItem="HIc-Co-TTZ" secondAttribute="leadingMargin" id="z6W-Cq-cZN"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="h2G-ue-S1k"/>
+                    <tabBarItem key="tabBarItem" title="Foundation" id="h2G-ue-S1k"/>
                     <connections>
                         <outlet property="condensedLabel" destination="op7-1M-feo" id="Jhp-KG-cNK"/>
                         <outlet property="localizedFormatLabel" destination="TUO-aH-GhU" id="kB3-di-fYq"/>
@@ -181,6 +229,7 @@
                     <connections>
                         <segue destination="lhe-hO-QJc" kind="relationship" relationship="viewControllers" id="P4L-sC-Cz4"/>
                         <segue destination="vsu-Ej-ZX0" kind="relationship" relationship="viewControllers" id="F7h-aq-hzx"/>
+                        <segue destination="NZY-LT-sbH" kind="relationship" relationship="viewControllers" id="a4A-Sb-UaH"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RNa-6C-uah" userLabel="First Responder" sceneMemberID="firstResponder"/>
