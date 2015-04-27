@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SobrKit
 
 class MyModel: NSObject {
     var text: String?
@@ -22,5 +23,23 @@ class ModelAwareViewController: UIViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    
+    @IBAction func loadJoke(sender: AnyObject) {
+        API.fetchJokes({ (jokes) -> Void in
+            let randomIndex = self.randomIndexInRange(0..<jokes.count)
+            let randomJoke = jokes[randomIndex]
+            self.willChangeValueForKey("data")
+            self.data.text = randomJoke.text
+            self.didChangeValueForKey("data")
+        }, failure: { (error) -> Void in
+            self.willChangeValueForKey("data")
+            self.data.text = error.localizedDescription
+            self.didChangeValueForKey("data")
+        })
+    }
+    
+    func randomIndexInRange(range: Range<Int>) -> Int {
+        return Int(arc4random_uniform(UInt32(range.endIndex - range.startIndex))) + range.startIndex
     }
 }
