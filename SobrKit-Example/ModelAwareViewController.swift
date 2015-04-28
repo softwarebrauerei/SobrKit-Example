@@ -29,13 +29,13 @@ class ModelAwareViewController: UIViewController {
         API.fetchJokes({ (jokes) -> Void in
             let randomIndex = self.randomIndexInRange(0..<jokes.count)
             let randomJoke = jokes[randomIndex]
-            self.willChangeValueForKey("data")
+            self.willChangeValueForKey("data") // temporary solution
             self.data.text = randomJoke.text
-            self.didChangeValueForKey("data")
+            self.didChangeValueForKey("data") // temporary solution
         }, failure: { (error) -> Void in
-            self.willChangeValueForKey("data")
+            self.willChangeValueForKey("data") // temporary solution
             self.data.text = error.localizedDescription
-            self.didChangeValueForKey("data")
+            self.didChangeValueForKey("data") // temporary solution
         })
     }
     
