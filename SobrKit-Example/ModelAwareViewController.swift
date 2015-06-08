@@ -10,7 +10,7 @@ import UIKit
 import SobrKit
 
 class MyModel: NSObject {
-    var text: String?
+    dynamic var text: String?
 }
 
 class ModelAwareViewController: UIViewController {
@@ -29,13 +29,9 @@ class ModelAwareViewController: UIViewController {
         API.fetchJokes({ (jokes) -> Void in
             let randomIndex = self.randomIndexInRange(0..<jokes.count)
             let randomJoke = jokes[randomIndex]
-            self.willChangeValueForKey("data")
             self.data.text = randomJoke.text
-            self.didChangeValueForKey("data")
         }, failure: { (error) -> Void in
-            self.willChangeValueForKey("data")
             self.data.text = error.localizedDescription
-            self.didChangeValueForKey("data")
         })
     }
     
